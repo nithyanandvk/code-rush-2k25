@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               {/* College Logo */}
               <img 
-                src="/public/mbu logo.png" 
+                src="https://res.cloudinary.com/dzsgjnpzh/image/upload/v1757190358/mbu_logo_ubjh0t.png" 
                 alt="MBU Logo" 
                 className="h-20 w-30  object-contain shadow-md"
               />

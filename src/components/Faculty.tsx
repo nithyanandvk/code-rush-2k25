@@ -5,21 +5,21 @@ const Faculty = () => {
   const facultyMembers = [
     {
       name: 'Dr. G. Sunitha',
-      role: 'Professor & Head, CSE',
+      role: 'Professor & Head, CSE',
       linkedin: 'https://www.linkedin.com/in/dr-sunitha-g-11a710119/',
-      image:'/public/WhatsApp Image 2025-09-06 at 19.56.28_fc507421.jpg' // Placeholder for actual image
+      image:'https://res.cloudinary.com/dzsgjnpzh/image/upload/v1757190359/WhatsApp_Image_2025-09-06_at_19.56.28_fc507421_byvwhd.jpg'
     },
     {
       name: 'Siva Kumar Depuru',
       role: 'Assistant Professor, CSE',
-      linkedin: 'linkedin.com/in/siva-kumar-d-01717723b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      image: null // Placeholder for actual image
+      linkedin: 'https://www.linkedin.com/in/siva-kumar-d-01717723b/',
+      image: 'https://res.cloudinary.com/dzsgjnpzh/image/upload/v1757190709/siva_kumarsir_wsr0cz.jpg'
     },
     {
       name: 'Basi Reddy',
-      role: 'Assistant professor',
+      role: 'Assistant Professor',
       linkedin: '#',
-      image: null // Placeholder for actual image
+      image: null
     }
   ];
 
@@ -42,9 +42,17 @@ const Faculty = () => {
               key={index}
               className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-center hover:bg-white/20 transition-all duration-300 transform hover:scale-105 group"
             >
-              {/* Profile Image Placeholder */}
-              <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <User className="h-12 w-12 text-white" />
+              {/* Profile Image */}
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                {member.image ? (
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <User className="h-12 w-12 text-white" />
+                )}
               </div>
 
               <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
@@ -62,8 +70,6 @@ const Faculty = () => {
             </div>
           ))}
         </div>
-
-
       </div>
     </section>
   );
