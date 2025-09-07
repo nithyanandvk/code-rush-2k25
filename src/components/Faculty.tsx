@@ -10,14 +10,14 @@ const Faculty = () => {
       image:'https://res.cloudinary.com/dzsgjnpzh/image/upload/v1757190359/WhatsApp_Image_2025-09-06_at_19.56.28_fc507421_byvwhd.jpg'
     },
     {
-      name: 'Siva Kumar Depuru',
+      name: 'Mr. Siva Kumar Depuru',
       role: 'Assistant Professor, CSE',
       linkedin: 'https://www.linkedin.com/in/siva-kumar-d-01717723b/',
       image: 'https://res.cloudinary.com/dzsgjnpzh/image/upload/v1757190709/siva_kumarsir_wsr0cz.jpg'
     },
     {
-      name: 'Basi Reddy',
-      role: 'Assistant Professor',
+      name: 'Mr. A. Basi Reddy',
+      role: 'Assistant Professor, CSE',
       linkedin: '#',
       image: null
     }
