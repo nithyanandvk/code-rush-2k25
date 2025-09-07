@@ -18,8 +18,8 @@ const Faculty = () => {
     {
       name: 'Mr. A. Basi Reddy',
       role: 'Assistant Professor, CSE',
-      linkedin: '#',
-      image: null
+      linkedin: 'https://res.cloudinary.com/dzsgjnpzh/image/upload/v1757225525/WhatsApp_Image_2025-09-07_at_10.21.04_578dd1ce_nkaqw2.jpg',
+      image: 'https://www.linkedin.com/in/basi-reddy-a-a75a74168?trk=contact-info'
     }
   ];
 
