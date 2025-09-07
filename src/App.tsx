@@ -12,8 +12,12 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-gray-900 text-white">
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
+    // Main wrapper with animated gradient background from CSS
+    <div className="text-white min-h-screen relative overflow-hidden">
+      {/* Optional subtle overlay for readability */}
+      <div className="absolute inset-0 bg-black/30 z-0"></div>
+
+      <div className="relative z-10">
         <Header />
         <Hero />
         
