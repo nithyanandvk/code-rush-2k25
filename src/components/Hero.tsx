@@ -71,10 +71,10 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
           <a
-            href="https://forms.gle/KD4LH7VTSoBboAq58"
+            href="/"
             className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 sm:px-8 py-4 rounded-xl text-base sm:text-lg font-semibold text-white transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
           >
-            Register Now(5 slots left)
+            Registrations closed
             <ExternalLink className="h-5 w-5" />
           </a>
           <a
