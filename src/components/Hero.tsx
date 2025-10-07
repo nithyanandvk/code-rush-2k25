@@ -22,8 +22,25 @@ const Hero = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto text-center">
-        {/* MBU Logo Placeholder */}
 
+        {/* Logos Section */}
+        <div className="flex flex-wrap justify-center items-center gap-4 mb-6">
+          <img
+            src="/mbu logo.png"
+            alt="MBU Logo"
+            className="h-20 w-auto object-contain"
+          />
+          <img
+            src="/faceprep.jpg"
+            alt="Faceprep Logo"
+            className="h-16 w-auto object-contain"
+          />
+          <img
+            src="/GB.png"
+            alt="GB Logo"
+            className="h-16 w-auto object-contain"
+          />
+        </div>
 
         {/* Main Title */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-6 leading-tight">

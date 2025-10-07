@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, Phone, MapPin, Code, Hash } from 'lucide-react';
+import { MessageSquare, Phone, MapPin, Code } from 'lucide-react';
 
 const Footer = () => {
   const contactNumbers = [
@@ -12,17 +12,31 @@ const Footer = () => {
     <footer className="bg-gray-900/95 backdrop-blur-md border-t border-white/10 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          
           {/* Logo and Description */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              {/* College Logo */}
-              <img 
-                src="https://res.cloudinary.com/dzsgjnpzh/image/upload/v1757190358/mbu_logo_ubjh0t.png" 
-                alt="MBU Logo" 
-                className="h-20 w-30  object-contain shadow-md"
-              />
-              <span className="text-2xl font-bold text-white">CODE RUSH 2K25</span>
+            <div className="flex items-center space-x-4 mb-4">
+              {/* Multiple Logos */}
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="https://res.cloudinary.com/dzsgjnpzh/image/upload/v1757190358/mbu_logo_ubjh0t.png" 
+                  alt="MBU Logo" 
+                  className="h-16 w-auto object-contain shadow-md"
+                />
+                <img 
+                  src="/faceprep.jpg" 
+                  alt="Faceprep Logo" 
+                  className="h-14 w-auto object-contain shadow-md"
+                />
+                <img 
+                  src="/GB.png" 
+                  alt="GB Logo" 
+                  className="h-14 w-auto object-contain shadow-md"
+                />
+              </div>
+              <span className="text-2xl font-bold text-white ml-2">CODE RUSH 2K25</span>
             </div>
+
             <p className="text-gray-300 mb-4 leading-relaxed">
               An exciting hackathon organized by the Department of CSE, Mohan Babu University. 
               Join us for an incredible coding experience with talented peers and industry mentors.
